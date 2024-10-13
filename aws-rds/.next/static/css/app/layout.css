@@ -716,6 +716,9 @@ video {
 .mb-14 {
   margin-bottom: 3.5rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -776,6 +779,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-24 {
+  height: 6rem;
+}
 .w-12 {
   width: 3rem;
 }
@@ -794,6 +800,9 @@ video {
 .w-full {
   width: 100%;
 }
+.w-24 {
+  width: 6rem;
+}
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -805,6 +814,9 @@ video {
 }
 .max-w-xl {
   max-width: 36rem;
+}
+.max-w-6xl {
+  max-width: 72rem;
 }
 .flex-shrink-0 {
   flex-shrink: 0;
@@ -838,6 +850,21 @@ video {
 }
 .gap-8 {
   gap: 2rem;
+}
+.gap-x-12 {
+  column-gap: 3rem;
+}
+.gap-x-6 {
+  column-gap: 1.5rem;
+}
+.gap-x-8 {
+  column-gap: 2rem;
+}
+.gap-y-12 {
+  row-gap: 3rem;
+}
+.gap-y-20 {
+  row-gap: 5rem;
 }
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -977,6 +1004,10 @@ video {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
 .py-36 {
   padding-top: 9rem;
   padding-bottom: 9rem;
@@ -992,6 +1023,9 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.pt-36 {
+  padding-top: 9rem;
 }
 .text-center {
   text-align: center;
@@ -1015,6 +1049,10 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .font-bold {
   font-weight: 700;
@@ -1042,6 +1080,9 @@ video {
 }
 .leading-snug {
   line-height: 1.375;
+}
+.leading-7 {
+  line-height: 1.75rem;
 }
 .tracking-tight {
   letter-spacing: -0.025em;
@@ -1284,6 +1325,10 @@ body {
     margin-bottom: 2rem;
   }
 
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -1292,8 +1337,20 @@ body {
     width: auto;
   }
 
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
   .sm\:justify-center {
     justify-content: center;
+  }
+
+  .sm\:text-left {
+    text-align: left;
   }
 
   .sm\:text-6xl {
@@ -1304,6 +1361,11 @@ body {
   .sm\:text-xl\/relaxed {
     font-size: 1.25rem;
     line-height: 1.625;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -1360,9 +1422,18 @@ body {
 
 @media (min-width: 1024px) {
 
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .lg\:text-4xl {
